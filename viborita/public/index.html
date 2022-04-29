@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake</title>
+    <!-- METADATA TWITTER -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:url" value="https://fessito-snake-game.web.app/">
+    <meta name="twitter:title" value="Snake game">
+    <meta name="twitter:description" value="A snake game fully made out of vanilla css grid and JavaScript, no snake canvas nor frameworks or preprocessors.">
+    <meta name="twitter:creator" value="@fessit0">
+    <!-- METADATA FACEBOOK -->
+    <meta property="og:title" content="Snake game" />
+    <meta property="og:type" content="game" />
+    <meta property="og:description" content="A snake game fully made out of vanilla css grid and JavaScript, no snake canvas nor frameworks or preprocessors." />
+    <meta property="og:url" content="https://fessito-snake-game.web.app/" />
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: black;
+        }
+        #gameBoard{
+            background-color: #CCC;
+            width: 100vmin;
+            height: 100vmin;
+            display: grid;
+            grid-template-columns: repeat(21, 1fr);
+            grid-template-rows: repeat(21, 1fr);
+        }
+        .food{
+            background-color: gold;
+            border: .25vmin solid black;
+        }
+        .snake{
+            background-color:blueviolet;
+            border: .25vmin solid black;
+        }
+    </style>
+    <script src="/juego.js" defer type="module"></script>
+</head>
+
+<body>
+    <div id="gameBoard"></div>
+</body>
+</html>
